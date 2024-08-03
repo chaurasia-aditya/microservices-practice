@@ -4,8 +4,8 @@ build:
 cards:
   message: "Welcome to Bank CARDS related to QA APIs"
   contactDetails:
-    name: "Shreya Patel"
-    email: "shreya.p@bankms.com"
+    name: "Aditya Chaurasia"
+    email: "chauri@bankms.com"
   onCallSupport:
     - (777) 111-5432
     - (777) 345-6789
