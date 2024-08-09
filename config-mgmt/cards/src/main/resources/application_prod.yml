@@ -4,10 +4,10 @@ spring:
       on-profile: "prod"
 
 build:
-  version: "1.0"
+  version: "1.2"
 
-accounts:
-  message: "Welcome to Bank accounts related to prod APIs"
+cards:
+  message: "Welcome to Bank CARDS related to prod APIs"
   contactDetails:
     name: "Shel Devon"
     email: "devon.shel@bankms.com"
