@@ -1,0 +1,15 @@
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to Bank accounts related to prod APIs"
+  contactDetails:
+    name: "Shel Devon"
+    email: "devon.shel@bankms.com"
+  onCallSupport:
+    - (666) 000-7654
+    - (666) 789-4321
+
+
+
+

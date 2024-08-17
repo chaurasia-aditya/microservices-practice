@@ -1,0 +1,16 @@
+build:
+  version: "3.1"
+
+loans:
+  message: "Welcome to Bank LOANS related to local APIs"
+  contactDetails:
+    name: "John Doe"
+    email: "john-doe@bankms.com"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 987-6543
+
+
+
+
+
