@@ -1,0 +1,11 @@
+build:
+  version: "3.2"
+
+cards:
+  message: "Welcome to Bank CARDS related to local APIs"
+  contactDetails:
+    name: "John Doe"
+    email: "john-doe@bankms.com"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 987-6543
