@@ -1,0 +1,31 @@
+services:
+  network-deploy-service:
+    networks:
+      - bank-ms
+
+  microservice-base-config:
+    extends:
+      service: network-deploy-service
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+
+  microservice-configServer-config:
+    extends:
+      service: microservice-base-config
+    depends_on:
+      configServer:
+        condition: service_healthy
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      SPRING_CONFIG_IMPORT: "configserver:http://configServer:8071/"
+
+  microservice-eureka-config:
+    extends:
+      service: microservice-configServer-config
+    depends_on:
+      eurekaServer:
+        condition: service_healthy
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaServer:8070/eureka/
